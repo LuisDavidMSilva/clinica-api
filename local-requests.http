@@ -1,0 +1,58 @@
+
+POST http://localhost:3333/authentication
+Content-Type: application/json
+
+{
+  "email": "admin@admin.com",
+  "password": "12345678"
+}
+
+###
+GET http://localhost:3333/seeds
+Authorization: Bearer
+
+###
+POST http://localhost:3333/patients
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTM3MzYyMDgsImV4cCI6MTY1MzgyMjYwOCwic3ViIjoiYTVkM2U5MzYtZWIzYi00ODNkLWEwODgtNGYyMzg3ZmU1Yjg0In0.vHemHfgafdALRyJoZ1re2ENZId76h8FGJyRlVQY_wWw
+
+{
+  "name": "XPTO de Tal",
+  "cpf": "00000019909",
+  "rg": "112233",
+  "phone": "40015098",
+  "email": "fxpto@gmail.com",
+  "gender": "MALE",
+  "address": "Goias",
+  "district": "VAL",
+  "county": "BR"
+}
+
+###
+DELETE http://localhost:3333/patients/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTM3MzYyMDgsImV4cCI6MTY1MzgyMjYwOCwic3ViIjoiYTVkM2U5MzYtZWIzYi00ODNkLWEwODgtNGYyMzg3ZmU1Yjg0In0.vHemHfgafdALRyJoZ1re2ENZId76h8FGJyRlVQY_wWw
+
+###
+GET http://localhost:3333/patients?district=VAL
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTM3MzYyMDgsImV4cCI6MTY1MzgyMjYwOCwic3ViIjoiYTVkM2U5MzYtZWIzYi00ODNkLWEwODgtNGYyMzg3ZmU1Yjg0In0.vHemHfgafdALRyJoZ1re2ENZId76h8FGJyRlVQY_wWw
+
+###
+GET http://localhost:3333/patients/18371c7c-0ace-4585-9775-2f98c09580bd
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTM3MzYyMDgsImV4cCI6MTY1MzgyMjYwOCwic3ViIjoiYTVkM2U5MzYtZWIzYi00ODNkLWEwODgtNGYyMzg3ZmU1Yjg0In0.vHemHfgafdALRyJoZ1re2ENZId76h8FGJyRlVQY_wWw
+
+###
+PUT http://localhost:3333/patients/
+Content-Type: application/json
+Authorization: Bearer
+
+{
+  "name": "Fulano de Tal",
+  "cpf": "00000011102",
+  "rg": "000000",
+  "phone": "40028922",
+  "email": "fulano_tal@gmail.com",
+  "gender": "MALE",
+  "address": "Brasilia",
+  "district": "GOIAS",
+  "county": "BR"
+}
