@@ -33,7 +33,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node dist/src/infra/http/server.js",
     "develop": "tsnd --respawn --transpile-only --inspect=0.0.0.0:9229 --ignore-watch node_modules --watch 'src/**' src/infra/http/server.ts",
     "seeds": "ts-node src/infra/database/seeds.ts"
   }
