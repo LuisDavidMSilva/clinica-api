@@ -13,7 +13,7 @@ export class AuthenticateController {
         password,
       });
 
-      return response.status(200).json({ token: result });
+      return response.status(200).json({ result });
     } catch (error) {
       throw new Error('Internal Server Error');
     }
