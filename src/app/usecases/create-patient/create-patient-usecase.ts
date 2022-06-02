@@ -36,7 +36,7 @@ export class CreatePatientUsecase {
       throw new Error('Gender invalid');
     }
 
-    const patient = await this.repository.create(data as Patient);
+    const patient = await this.repository.create(data as any);
 
     return patient;
   }
