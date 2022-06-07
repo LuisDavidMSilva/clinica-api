@@ -12,7 +12,7 @@ export class Patient {
   public gender: Gender = 'MALE';
   public address: string;
   public district: string;
-  public county: string;
+  public country: string;
 
   constructor(props: Omit<Patient, 'id'>, id?: string) {
     Object.assign(this, props);

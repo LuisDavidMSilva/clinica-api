@@ -25,7 +25,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTM3MzYyM
   "gender": "MALE",
   "address": "Goias",
   "district": "VAL",
-  "county": "BR"
+  "country": "BR"
 }
 
 ###
@@ -54,5 +54,5 @@ Authorization: Bearer
   "gender": "MALE",
   "address": "Brasilia",
   "district": "GOIAS",
-  "county": "BR"
+  "country": "BR"
 }

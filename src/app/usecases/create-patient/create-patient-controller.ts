@@ -6,7 +6,7 @@ export class CreatePatientController {
 
   async handle(request: Request, response: Response): Promise<Response> {
     try {
-      const { name, cpf, rg, phone, email, gender, address, district, county } =
+      const { name, cpf, rg, phone, email, gender, address, district, country } =
         request.body;
 
       const result = await this.createPatientUsecase.execute({
@@ -18,7 +18,7 @@ export class CreatePatientController {
         gender,
         address,
         district,
-        county,
+        country,
       });
 
       return response.status(200).json(result);

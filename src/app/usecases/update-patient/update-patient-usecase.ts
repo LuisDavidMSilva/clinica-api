@@ -10,7 +10,7 @@ type UpdatePatientRequest = {
   gender?: string;
   address?: string;
   district?: string;
-  county?: string;
+  country?: string;
 };
 
 export class UpdatePatientUsecase {
