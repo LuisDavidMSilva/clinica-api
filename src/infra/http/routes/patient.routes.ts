@@ -8,7 +8,7 @@ import { ensureAuthenticated } from '../middlewares/ensureAuthenticated';
 
 export const patientRouter = Router();
 
-patientRouter.use(ensureAuthenticated);
+// patientRouter.use(ensureAuthenticated);
 
 patientRouter.post('/', (request: Request, response: Response) =>
   makeCreatePatientController().handle(request, response),
